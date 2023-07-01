@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+    background: rgb(var(--background-start-rgb)) ;
+}
+
+
+.profile-image{
+  height:40px;
+  margin-left:50px;
+}
+
+.nav-container{
+  height: 50px;
+  width:100vw;
+  display:flex;
+  
+}
+.input{
+  background-color: gray;
+  width:50vw;
+  margin-left:100px;
+  border-color:white ;
+  height:30px;
+}
+
+.image{
+  height: 40px;
+  margin-left:10px;
+  
+}
+.header-paragraph{
+  color: black;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.header-button{
+  background-color: white;
+  width:120px;
+  height:30px;
+  margin-left:30px;
+  border-color: black;
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+}
+
+@media screen and (min-height: 768px){
+  .header-button{
+    display: none;
+  }
+}
+  
+
+.sub-nav-container{
+  display: flex;
+  width: 99vw;
+  height:25px;
+  background-color: black;
+}
+.sub-paragraph{
+  color:white;
+  font-size:10px;
+  padding:4px;
+  margin-left:25px;
+}
+.sub-paragraph-1{
+  color:red;
+  font-size: 10px;
+  padding:4px;
+  margin-left: 25PX;
+}
+.sub-paragraph-2{
+  color:green;
+  font-size:10px;
+  padding:4px;
+  margin-left:25px;
+
+}
+.company-heading{
+  color:red;
+  font-size:20px;
+  margin:10px;
+  font-weight:600;
+}
+.market-heading{
+  color:red;
+  font-size:20px;
+  margin:10px;
+  font-weight:600;
+  margin-left:50px;
+}
+.company-nav-container{
+  height:60px;
+  background-color: rgb(186, 246, 237);
+  width:99vw;
+  display: flex;
+  flex-grow: 0;
+}
+
+.company-image{
+  width:80px;
+  padding:15px;
+  margin-left:20px;
+}
+.company-image-1{
+  width:120px;
+  padding:15px;
+  margin-left:20px;
+}
+.company-paragraph{
+  color:black;
+  font-weight: 800;
+  margin:10px;
+  margin-left:50px;
+}
+.filters-main-container{
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  width:45vw;
+  height: 100px;
+  background-color: aliceblue;
+  display: flex;
+  margin-left:50px;
+}
+.filters-detail-container{
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  width:45vw;
+  height: 300px;
+  margin:10px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin-left:50px;
+}
+.filters-details-container{
+  box-shadow: 0px 8px 40px rgba(7, 7, 7, 0.08);
+  width:45vw;
+  height:200px;
+  margin:10px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  margin-left:50px;
+}
+.section-1-container{
+  margin-top:10px;
+  margin-left:30px;
+  height: 40px;
+  width:100px;
+  margin-top:30px;
+  border-radius: 20px;
+  background-color: red;
+  color:white;
+  padding-top:10px;
+  padding-left:10px;
+
+}
+.section-2-container{
+  margin-top:10px;
+  margin-left:30px;
+  height: 40px;
+  width:100px;
+  margin-top:30px;
+  border-radius: 20px;
+  background-color: blue;
+  color:white;
+  padding-top:10px;
+  padding-left:10px;
+
+}
+.filter-input{
+  height:30px;
+  width:180px;
+  background-color: rgb(247, 239, 239);
+  margin-top:30px;
+  margin-left:60px;
+  border-radius: 30px;
+}
+.section-3-container{
+  margin-top:10px;
+  margin-left:30px;
+  height: 40px;
+  width:100px;
+  margin-top:30px;
+  border-radius: 20px;
+  background-color: yellowgreen;
+  color:white;
+  padding-top:10px;
+  padding-left:10px;
+
+}
+.detail-paragraph{
+  margin-left:600px;
+  color:blue;
+  margin-top: 10px;
+  font-size:10px;
+}
+.detail-image{
+  height:100px;
+  width:300px;
+  margin-left:180px;
+  margin-bottom:20px;
+}
+.detail-heading{
+  color:black;
+  font-size: 15px;
+  margin-left:50px;
+  font-weight: 600;
+  margin-top:5px;
+}
+.user-container{
+  display: flex;
+}
+.section-1-detail-container{
+  
+  margin-left:30px;
+  height: 30px;
+  width:100px;
+  margin-top:5px;
+  border-radius: 20px;
+  background-color: red;
+  color:white;
+  padding-top:5px;
+  padding-left:10px;
+}
+.section-2-detail-container{
+  
+  margin-left:30px;
+  height: 30px;
+  width:100px;
+  margin-top:5px;
+  border-radius: 20px;
+  background-color: blue;
+  color:white;
+  padding-top:5px;
+  padding-left:10px;
+}
+.section-3-detail-container{
+  
+  margin-left:30px;
+  height: 30px;
+  width:100px;
+  margin-top:5px;
+  border-radius: 20px;
+  background-color: yellowgreen;
+  color:white;
+  padding-top:5px;
+  padding-left:10px;
+}
+.reaction-image{
+  height:15px;
+  margin-left:80px;
+  margin-top:30px;
+}
+.details-paragraph{
+  color:black;
+  font-size: 15px;
+  font-family: "Roboto";
+  margin-left:130px;
+  max-width:400px;
+}
+.reaction-sub-container{
+  display: flex;
+}
+.reactions-container{
+  display: flex;
+}
+.reaction-paragraph{
+  margin-top: 28px;
+  margin-left:5px;
+  font-size:15px;
+}
+.bottom-sub-container{
+  display: flex;
+  flex-direction: column;
+}
+.bottom-container{
+  display: flex;
+}
+.image-1-container{
+  border-radius: 5px;
+  height:250px;
+  width:30vw;
+  background-image: url("https://tse2.mm.bing.net/th?id=OIP.qnbF76-f1LeCvJAsAPbiRAHaE8&pid=Api&P=0&h=180");
+  margin-left:100px;
+  margin-top:80px;
+  background-size:cover;
+}
+.image-2-container{
+  border-radius: 5px;
+  height:250px;
+  width:30vw;
+  background-image: url("https://tse3.mm.bing.net/th?id=OIP._iZ0X6C7WHSVs1CtByVlFQHaFj&pid=Api&P=0&h=180");
+  margin-left:100px;
+  margin-top:40px;
+  background-size:cover;
+}
+.image-3-container{
+  border-radius: 5px;
+  height:250px;
+  width:30vw;
+  background-image: url("https://tse2.mm.bing.net/th?id=OIP.m9bi3DBGVUb5CAMBqbulsQHaEQ&pid=Api&P=0&h=180");
+  margin-left:100px;
+  margin-top:40px;
+  background-size:cover;
+}
+
+.market-paragraph{
+  padding-top:200px;
+  max-width:400px;
+  color:white;
+  padding-left:30px;
+  
+}
